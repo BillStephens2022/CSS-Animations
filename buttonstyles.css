@@ -25,7 +25,7 @@ html {
 
   .buttons-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: lightsteelblue;
@@ -33,7 +33,20 @@ html {
     margin: 1rem 0;
   }
 
-  #button1, #button2, #button3 {
+  .button-container {
+    display: flex;
+    max-width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: rgb(235, 225, 225);
+    border-radius: 8px;
+    padding: 1rem;
+    border: solid black 5px;
+  }
+
+  #button1, #button2, #button3, #button4 {
     text-decoration: none;
     color: #272727;
     font-family: sans-serif;
@@ -136,4 +149,21 @@ html {
 
   #button3:hover {
     color: white;
+  }
+
+  #button4 {
+    color: #E1332D;
+    border: 3px solid #E1332D;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'roboto';
+    font-weight: 300;
+    letter-spacing: -2px;
+    transition: all 0.5s;
+  }
+
+  #button4:hover {
+    font-weight: 900;
+    letter-spacing: 10px;
+    border: 7px solid #E1332D;
   }
