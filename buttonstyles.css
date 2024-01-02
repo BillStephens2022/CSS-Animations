@@ -24,7 +24,6 @@ html {
   }
 
   .buttons-container {
-    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +33,7 @@ html {
     margin: 1rem 0;
   }
 
-  #button1, #button2 {
+  #button1, #button2, #button3 {
     text-decoration: none;
     color: #272727;
     font-family: sans-serif;
@@ -91,5 +90,50 @@ html {
   }
 
   #button2:hover {
+    color: white;
+  }
+
+  #button3 {
+    color: #262626;
+    letter-spacing: 2px;
+    border: 5px solid #262626;
+    transition: 1s;
+  }
+
+  #button3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateX(90deg);
+    z-index: -1;
+  }
+
+  #button3:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateY(90deg);
+    z-index: -1;
+  }
+
+  #button3:hover:before {
+    transform: rotateX(0deg);
+  }
+
+  #button3:hover:after {
+    transform: rotateY(0deg);
+  }
+
+  #button3:hover {
     color: white;
   }
