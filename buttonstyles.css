@@ -273,3 +273,33 @@ h2 {
 #button7:hover:after {
   transform: translate(0, 0);
 }
+
+#button8 {
+  color: #262626;
+  border: 3px solid #262626;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+#button8:before {
+  content: 'Hover Me';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#button8:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
