@@ -1,195 +1,231 @@
 html {
-    font-family: sans-serif;
-  }
-  body {
-    background-color: slateblue;
-    text-align: center;
-    z-index: 0;
-  }
+  font-family: sans-serif;
+}
+body {
+  background-color: slateblue;
+  text-align: center;
+  z-index: 0;
+}
 
-  #home-link {
-    color: white;
-    text-align: left;
-  }
+#home-link {
+  color: white;
+  text-align: left;
+}
 
-  h1 {
-    color: white;
-  }
+h1 {
+  color: white;
+}
 
-  h2 {
-    color: white;
-    background-color: slateblue;
-    padding: 0.54rem;
-    border-radius: 5px;
-  }
+h2 {
+  color: white;
+  background-color: slateblue;
+  padding: 0.54rem;
+  border-radius: 5px;
+}
 
-  .buttons-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: lightsteelblue;
-    z-index: 0;
-    margin: 1rem 0;
-  }
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: lightsteelblue;
+  z-index: 0;
+  margin: 1rem 0;
+}
 
-  .button-container {
-    display: flex;
-    max-width: 15rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    background-color: rgb(235, 225, 225);
-    border-radius: 8px;
-    padding: 1rem;
-    border: solid black 5px;
-  }
+.button-container {
+  display: flex;
+  max-width: 15rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: rgb(235, 225, 225);
+  border-radius: 8px;
+  padding: 1rem;
+  border: solid black 5px;
+}
 
-  #button1, #button2, #button3, 
-  #button4, #button5 {
-    text-decoration: none;
-    color: #272727;
-    font-family: sans-serif;
-    font-size: 45px;
-    border: 5px solid #272727;
-    padding: 20px 40px;
-    position: relative;
-    z-index: 3;
-    overflow: hidden;
-    margin: 1rem 0;
-  }
+#button1,
+#button2,
+#button3,
+#button4,
+#button5,
+#button6 {
+  text-decoration: none;
+  color: #272727;
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid #272727;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  margin: 1rem 0;
+}
 
-  #button1:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #fff200;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    transform-origin: bottom left;
-    transform: rotate(-90deg);
-    transition: transform 1s;
-  }
+#button1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff200;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  transition: transform 1s;
+}
 
-  #button1:hover:before {
-    transform: rotate(0deg);
-  }
+#button1:hover:before {
+  transform: rotate(0deg);
+}
 
-  #button2 {
-    color: #351435;
-    font-size: 40px;
-    border: 3px solid #351435;
-    transition: all 1s;
-    overflow: hidden;
-  }
+#button2 {
+  color: #351435;
+  font-size: 40px;
+  border: 3px solid #351435;
+  transition: all 1s;
+  overflow: hidden;
+}
 
-  #button2:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #351435;
-    z-index: -1;
-    transform: translateX(-100%);
-    transition: all 1s;
-  }
+#button2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
 
-  #button2:hover:before {
-    transform: translateX(0);
-  }
+#button2:hover:before {
+  transform: translateX(0);
+}
 
-  #button2:hover {
-    color: white;
-  }
+#button2:hover {
+  color: white;
+}
 
-  #button3 {
-    color: #262626;
-    letter-spacing: 2px;
-    border: 5px solid #262626;
-    transition: 1s;
-  }
+#button3 {
+  color: #262626;
+  letter-spacing: 2px;
+  border: 5px solid #262626;
+  transition: 1s;
+}
 
-  #button3:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #262626;
-    transition: 1s;
-    transform: rotateX(90deg);
-    z-index: -1;
-  }
+#button3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
 
-  #button3:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #262626;
-    transition: 1s;
-    transform: rotateY(90deg);
-    z-index: -1;
-  }
+#button3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateY(90deg);
+  z-index: -1;
+}
 
-  #button3:hover:before {
-    transform: rotateX(0deg);
-  }
+#button3:hover:before {
+  transform: rotateX(0deg);
+}
 
-  #button3:hover:after {
-    transform: rotateY(0deg);
-  }
+#button3:hover:after {
+  transform: rotateY(0deg);
+}
 
-  #button3:hover {
-    color: white;
-  }
+#button3:hover {
+  color: white;
+}
 
-  #button4 {
-    color: #E1332D;
-    border: 3px solid #E1332D;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-family: 'roboto';
-    font-weight: 300;
-    letter-spacing: -2px;
-    transition: all 0.5s;
-  }
+#button4 {
+  color: #e1332d;
+  border: 3px solid #e1332d;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "roboto";
+  font-weight: 300;
+  letter-spacing: -2px;
+  transition: all 0.5s;
+}
 
-  #button4:hover {
-    font-weight: 900;
-    letter-spacing: 2px;
-    border: 7px solid #E1332D;
-  }
+#button4:hover {
+  font-weight: 900;
+  letter-spacing: 2px;
+  border: 7px solid #e1332d;
+}
 
-  #button5 {
-    background-color: black;
-    color: white;
-  }
+#button5 {
+  background-color: black;
+  color: white;
+}
 
-  #button5:before {
-    content: 'YEAH!';
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#button5:before {
+  content: "YEAH!";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f44336;
+  transition: all 1s;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button5:hover:before {
+  transform: translateY(0);
+}
+
+#button6 {
+  background-color: #222;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid white;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+#button6:hover {
     background-color: #F44336;
-    transition: all 1s;
-    transform: translateY(-100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+}
 
-  #button5:hover:before {
-    transform: translateY(0);
-  }
+#button6:before {
+    content: '';
+    background-color: white;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 50px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 1s;
+}
+
+#button6:hover:before {
+    transform: translateX(100%) rotate(45deg);
+}
