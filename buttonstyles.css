@@ -337,3 +337,55 @@ h2 {
 #button9:hover:before {
   height: 190%;
 }
+
+#button10 {
+  background-color: #f1c40f;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  position: relative;
+  overflow: visible;
+}
+
+#button10:before {
+  content: "button";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2cd771;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+#button10:hover:before {
+  transform: rotateX(0deg);
+}
+
+#button10:after {
+  content: "button";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+}
+
+#button10:hover:after {
+  transform: rotateX(0deg);
+}
