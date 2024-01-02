@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d Animations</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        background-color: slateblue;
+        text-align: center;
+      }
+
+      #home-link {
+        color: white;
+        text-align: left;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      h2 {
+        color: slategray;
+      }
+
+      .image-container {
+        background-color: white;
+        perspective: 1000px;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        transition: transform 1s;
+      }
+
+      #image-1:hover {
+        transform: translateZ(300px);
+      }
+
+      
+      #image-2:hover {
+        transform: rotateY(120deg);
+      }
+
+    </style>
+  </head>
+  <body>
+    <a id="home-link" href="index.html">Home</a>
+    <h1>3d Animations</h1>
+   <div class="image-container">
+    <h2>Translate 3d - Z axis</h2>
+    <img id="image-1" src="https://images.unsplash.com/photo-1496054411561-656e8dcfb4cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D" alt="sample image"/>
+   </div>
+   <div class="image-container">
+    <h2>Rotate 3d</h2>
+    <img id="image-2" src="https://images.unsplash.com/photo-1496054411561-656e8dcfb4cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D" alt="sample image"/>
+   </div>
+  </body>
+</html>

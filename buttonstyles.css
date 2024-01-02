@@ -1,0 +1,57 @@
+html {
+    font-family: sans-serif;
+  }
+  body {
+    background-color: slateblue;
+    text-align: center;
+    z-index: 0;
+  }
+
+  #home-link {
+    color: white;
+    text-align: left;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  .buttons-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+    z-index: 0;
+  }
+
+  #button1 {
+    text-decoration: none;
+    color: #272727;
+    font-family: sans-serif;
+    font-size: 45px;
+    border: 5px solid #272727;
+    padding: 40px 80px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+   
+  }
+
+  #button1:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff200;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: top right;
+    transform: rotate(90deg);
+    transition: transform 1s;
+  }
+
+  #button1:hover:before {
+    transform: rotate(0deg);
+  }

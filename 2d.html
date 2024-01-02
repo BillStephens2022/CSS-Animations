@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2d Animations</title>
     <style>
+      html {
+        font-family: sans-serif;
+      }
       body {
         background-color: slateblue;
         text-align: center;
       }
+
+      #home-link {
+        color: white;
+        text-align: left;
+      }
+
       h1 {
         color: white;
       }
@@ -30,7 +39,10 @@
         align-items: center;
       }
 
-      #scale, #translate, #rotate, #skew {
+      #scale,
+      #translate,
+      #rotate,
+      #skew {
         transition: transform 2s ease;
       }
 
@@ -53,13 +65,10 @@
       #skew:hover {
         transform: skewY(15deg);
       }
-
-
-
-
     </style>
   </head>
   <body>
+    <a id="home-link" href="index.html">Home</a>
     <h1>2d Animations</h1>
     <div class="container">
       <div class="box" id="scale">scale me</div>
