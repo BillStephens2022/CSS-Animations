@@ -1136,6 +1136,134 @@ h2 {
   color: white;
 }
 
+.bg-dark {
+  background-color: #222;
+  min-width: 50rem;
+  max-width: 95vw;
+  min-height: 15rem;
+  padding-top: 0;
+}
+
+#button24-container {
+  display: flex;
+  gap: 150px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+
+.button24 {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  border: 2px solid #1e9bff;
+  color: #1e9bff;
+  font-size: 20px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.button24:hover {
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.span-button24 {
+  position: absolute;
+  background: #1e9bff;
+  box-shadow: 0 0 10px #1e9bff, 0 0 20px #1e9bff, 0 0 30px #1e9bff, 0 0 50px #1e9bff,0 0 100px #1e9bff;
+
+}
+
+.span-button24:nth-child(1),
+.span-button24:nth-child(3) {
+  width: 40px;
+  height: 4px;
+  
+}
+
+.span-button24:nth-child(2),
+.span-button24:nth-child(4) {
+  width: 4px;
+  height: 40px;
+}
+
+.span-button24:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -50px;
+  transition: 0.5s ease-in-out;
+  transform-origin: left;
+  transition-delay: 0.25s;
+}
+
+.button24:hover .span-button24:nth-child(1) {
+  left: 50%;
+  transform: scaleX(0);
+  transition-delay: 0s;
+}
+
+.span-button24:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transition: 0.5s ease-in-out;
+  transform-origin: left;
+  transition-delay: 0.25s;
+}
+
+.button24:hover .span-button24:nth-child(3) {
+  right: 50%;
+  transform: scaleX(0);
+  transition-delay: 0s;
+}
+
+.span-button24:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -50px;
+  transition: 0.5s ease-in-out;
+  transform-origin: top;
+  transition-delay: 0.25s;
+}
+
+.button24:hover .span-button24:nth-child(2) {
+  top: 50%;
+  transform: scaleY(0);
+  transition-delay: 0s;
+}
+
+.span-button24:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -50px;
+  transition: 0.5s ease-in-out;
+  transform-origin: bottom;
+  transition-delay: 0.25s;
+}
+
+.button24:hover .span-button24:nth-child(4) {
+  bottom: 50%;
+  transform: scaleY(0);
+  transition-delay: 0s;
+}
+
+.button24:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e9bff;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.button24:hover:before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px #1e9bff, 0 0 30px #1e9bff, 0 0 60px #1e9bff;
+}
 
 
 
