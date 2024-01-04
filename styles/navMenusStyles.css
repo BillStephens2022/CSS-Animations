@@ -176,7 +176,7 @@ h1 {
 
 /* Menu 3 - Split Background Bars Filling Down */
 #menu3-container {
-  background-color: white;
+  background-color: lightsalmon;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -247,21 +247,65 @@ h1 {
   color: white;
 }
 
-/* #menu3-ul li a:before {
-  content: "";
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  width: 12px;
-  height: 12px;
-  border: 3px solid #e91e63;
-  border-width: 0 0 3px 3px;
-  opacity: 0;
-  transition: all 0.3s;
-} */
+/* Menu 4 - Animated Split Bottom Border */
+#menu4-container {
+  background-color: rgb(178, 32, 142);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
 
-/* #menu3-ul li a:hover:before {
-  opacity: 1;
-  bottom: -8px;
-  left: -8px;
-} */
+#menu4-ul {
+  padding: 0;
+  display: flex;
+}
+
+#menu4-ul li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+#menu4-ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+#menu4-ul li a:before {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #00bcd4;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+#menu4-ul li a:after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #f0f;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  transition: all 0.5s;
+}
+
+#menu4-ul li a:hover:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+#menu4-ul li a:hover:after {
+  width: 50%;
+  transform: translateX(-100%);
+}
+
