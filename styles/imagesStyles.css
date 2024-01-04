@@ -304,6 +304,21 @@ h1 {
     transition-delay: 0.3s;
   }
   
-  #image5-container:hover img {
-    
+
+  /* Project 6 - Zoom in and Rotate */
+
+#image6-container {
+    width: 233px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid white;
+  }
+  
+  #image6-container img {
+    width: 100%;
+    transition: all 1s;
+  }
+  
+  #image6-container img:hover {
+    transform: scale(1.25) rotate(9deg);
   }
