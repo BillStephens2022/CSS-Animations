@@ -1,43 +1,101 @@
 html {
-    font-family: sans-serif;
-  }
-  
-  body {
-    background-color: slateblue;
-    text-align: center;
-    z-index: 0;
-  }
-  
-  #home-link {
-    color: white;
-    text-align: left;
-  }
-  
-  h1 {
-    color: white;
-  }
-  
-  .menus-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    background-color: lightsteelblue;
-    z-index: 0;
-    margin: 1rem 0;
-    padding: 2rem 0;
-  }
+  font-family: sans-serif;
+}
 
-  .menus-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    background-color: lightsteelblue;
-    z-index: 0;
-    margin: 1rem 0;
-    padding: 2rem 0;
-  }
-  
+body {
+  background-color: slateblue;
+  text-align: center;
+  z-index: 0;
+}
+
+#home-link {
+  color: white;
+  text-align: left;
+}
+
+h1 {
+  color: white;
+}
+
+.subtitle {
+    color: darkred;
+    border: 2px solid #444;
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.menus-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: lightsteelblue;
+  z-index: 0;
+  margin: 1rem 0;
+  padding: 2rem 0;
+}
+
+/* Menu 1 */
+#menu1-container {
+  background-color: #fffa65;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#menu1-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#menu1-ul li {
+  list-style: none;
+}
+
+#menu1-ul li a {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 22px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+
+#menu1-ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3d3d3d;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+#menu1-ul li a:hover:before,
+#menu1-ul li a:hover:after {
+  transform: scaleX(1);
+}
+
+#menu1-ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3d3d3d;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: right;
+}
+
