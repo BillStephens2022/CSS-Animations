@@ -616,9 +616,9 @@ h1 {
 }
 
 #menu8-ul li a:hover span:first-child:before {
-   top: -10px;
-   left: -10px;
-   opacity: 1;
+  top: -10px;
+  left: -10px;
+  opacity: 1;
 }
 
 #menu8-ul li a:hover span:first-child:after {
@@ -698,7 +698,6 @@ h1 {
   transform-origin: right;
 }
 
-
 #menu9-ul li a:hover:before {
   width: 15px;
   height: 15px;
@@ -767,7 +766,6 @@ h1 {
   transition: 0.5s;
 }
 
-
 #menu10-ul li a:hover:before {
   color: rgb(187, 0, 0);
   z-index: 1;
@@ -803,7 +801,6 @@ h1 {
 #menu11-ul li {
   list-style: none;
   text-align: center;
-  
 }
 
 #menu11-ul li a {
@@ -872,4 +869,122 @@ h1 {
   background: #fd79a8;
 }
 
+/* Menu 12 - Cursor Colors Text */
+#menu12-container {
+  background-color: #252839;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
+#menu12-ul {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+#menu12-ul li {
+  position: relative;
+  list-style: none;
+}
+
+#menu12-ul li a {
+  position: relative;
+  font-size: 4em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+#menu12-ul li a:before {
+  content: attr(data-text);
+  position: absolute;
+  color: #00ade1;
+  border-right: 8px solid #00ade1;
+  -webkit-text-stroke: 1px #00ade1;
+  width: 0%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+#menu12-ul li a:hover:before {
+  width: 100%;
+}
+
+
+/* Menu 13 - Overlay Glowing Text */
+#menu13-container {
+  position: relative;
+  background-color: #222;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+#menu13-ul {
+  position: relative;
+  /* z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#menu13-ul li {
+  list-style: none;
+}
+
+#menu13-ul li a {
+  position: relative;
+  display: block;
+  font-size: 4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+#menu13-ul li a:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3bffa7;
+  font-size: 0.35em;
+  letter-spacing: 40px;
+  text-shadow: 0 0 10px #3bffe8, 0 0 30px #3bffe8, 0 0 80px #3bffe8;
+  font-weight: 500;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#menu13-ul li:hover a:before {
+  opacity: 1;
+  letter-spacing: 6px;
+  transition-delay: 0.5s;
+}
+
+#menu13-ul li a:hover {
+ color: rgba(255, 255, 255, 0.1);
+ transition-delay: 0;
+}
