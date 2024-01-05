@@ -453,7 +453,7 @@ h1 {
 
 /* Menu 7 - Highlight & 2 Borders on Hovered Link */
 #menu7-container {
-  background-color: lightsteelblue;
+  background-color: rgb(80, 97, 119);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -637,4 +637,76 @@ h1 {
   bottom: -10px;
   right: -10px;
   opacity: 1;
+}
+
+/* Menu 9 - Rotating borders to corners */
+#menu9-container {
+  background-color: rgb(58, 2, 58);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#menu9-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#menu9-ul li {
+  list-style: none;
+}
+
+#menu9-ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin: 0 15px;
+  text-transform: uppercase;
+  color: #ffeb3b;
+}
+
+#menu9-ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #ffeb3b;
+  border-left: 2px solid #ffeb3b;
+  transition: 0.5s;
+  box-sizing: border-box;
+  transform-origin: left;
+}
+
+#menu9-ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #ffeb3b;
+  border-right: 2px solid #ffeb3b;
+  transition: 0.5s;
+  box-sizing: border-box;
+  transform-origin: right;
+}
+
+
+#menu9-ul li a:hover:before {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+}
+
+#menu9-ul li a:hover:after {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
 }
