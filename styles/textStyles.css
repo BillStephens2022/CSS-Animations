@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Just+Another+Hand&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;500;700;900&display=swap");
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #252839;
@@ -183,7 +185,7 @@ h2 {
 }
 
 .social-media-icon:hover:before {
-    animation: iconFill 0.7s 1 forwards;
+  animation: iconFill 0.7s 1 forwards;
 }
 
 @keyframes iconFill {
@@ -201,129 +203,243 @@ h2 {
   }
 }
 
-
 /* Project 4: Rotated Border Effect on Hover */
 #project-container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(205, 253, 229);
+  padding: 4rem;
+}
+
+#project-container4 h2 {
+  color: #58c747;
+  margin-bottom: 4rem;
+}
+
+#project4-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: yellow;
+}
+
+#project4-box h3 {
+  margin: 0;
+  padding: 0;
+  color: #272727;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#project4-box h3 span {
+  color: #58c747;
+  font-size: 30px;
+}
+
+#project4-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #58c747;
+  border-bottom: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+#project4-box:hover:before {
+  transform: scaleX(1);
+}
+
+#project4-box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #58c747;
+  border-left: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+
+#project4-box:hover:after {
+  transform: scaleY(1);
+  transition-delay: 0.5s;
+}
+
+#project4-rotated {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: yellow;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+#project4-rotated:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #58c747;
+  border-bottom: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+#project4-box:hover #project4-rotated:before {
+  transform: scaleX(1);
+  transition-delay: 1s;
+}
+
+#project4-rotated:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #58c747;
+  border-left: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+
+#project4-box:hover #project4-rotated:after {
+  transform: scaleY(1);
+  transition-delay: 1.5s;
+}
+
+/* Project 5: Open Close Transition on Hover */
+#project-container5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #9b59b6;
+  padding: 4rem;
+  overflow: hidden;
+}
+
+#project-container5 h2 {
+  color: white;
+}
+
+#project5-box {
+    font-family: "Just Another Hand";
+}
+
+#project5-box ul {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+#project5-box ul li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+#project5-box ul:hover li {
+    transform: rotate(180deg);
+}
+
+#project5-box ul:hover li:last-child {
+    transition-delay: 0.5s;
+}
+
+#project5-box ul li span {
+    transition: 0.5s;
+    display: inline-block;
+}
+
+#project5-box ul:hover li:last-child span:nth-child(2) {
+    transform: rotate(180deg) translateY(-25px);
+    transition-delay: 1s;
+}
+
+#project5-box ul:hover li:last-child span:nth-child(1) {
+    transform: rotate(90deg) translateY(10px);
+    transition-delay: 1.5s;
+}
+
+/* Project 6: Focus Blur Effect */
+#project-container6 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #6c59b6;
     padding: 4rem;
+    overflow: hidden;
   }
   
-  #project-container4 h2 {
-    color: black;
+  #project-container6 h2 {
+    color: white;
   }
 
-  #project4-box {
+  #project6-box {
     position: relative;
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-    background-color: yellow;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
 
-  #project4-box h3 {
-    margin: 0;
-    padding: 0;
-    color: #272727;
+  #project6-box img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 24px;
+    width: 140%;
+    height: 140%;
+    top: -20%;
+    left: -20%;
+    filter: blur(10px);
+    transition: 2s;
+  }
+
+  #project6-box h3 {
+    position: relative;
+    color: white;
+    font-size: 7em;
     text-transform: uppercase;
+    text-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    font-weight: 900;
+    z-index: 2;
+    transition: 2s;
   }
 
-  #project4-box h3 span {
-    color: #58c747;
-    font-size: 30px;
+  #project6-box h3:hover {
+    filter: blur(10px);
+    transform: scale(1.2);
   }
 
-  #project4-box:before {
-    content: "";
-    position: absolute;
+  #project6-box h3:hover ~ img {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-top: 4px solid #58c747;
-    border-bottom: 4px solid #58c747;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transform: scaleX(0);
+    filter: blur(0px);
   }
-
-  #project4-box:hover:before {
-    transform: scaleX(1);
-  }
-
-  #project4-box:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-right: 4px solid #58c747;
-    border-left: 4px solid #58c747;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transform: scaleY(0);
-  }
-
-  #project4-box:hover:after {
-    transform: scaleY(1);
-    transition-delay: 0.5s;
-  }
-
- #project4-rotated {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: yellow;
-    transform: rotate(45deg);
-    box-sizing: border-box;
- } 
-
- #project4-rotated:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-top: 4px solid #58c747;
-    border-bottom: 4px solid #58c747;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transform: scaleX(0);
-  }
-
-  #project4-box:hover #project4-rotated:before {
-    transform: scaleX(1);
-    transition-delay: 1s;
-  }
-
-  #project4-rotated:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-right: 4px solid #58c747;
-    border-left: 4px solid #58c747;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transform: scaleY(0);
-  }
-
-  #project4-box:hover #project4-rotated:after {
-    transform: scaleY(1);
-    transition-delay: 1.5s;
-  }
-
