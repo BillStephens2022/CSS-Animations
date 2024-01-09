@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Just+Another+Hand&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #252839;
+  color: white;
+}
+
+#home-link {
+  text-align: left;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.projects-container {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 2rem 0;
+}
+
+#box1 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  /* animation-name: moving;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; 
+  animation-delay: 1s */
+  /* shorthand notation: */
+  /* these can go in any order, with one exception, duration must always be shown before the delay */
+  animation: moving 3s both infinite alternate-reverse 1s;
+
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(500px);
+  }
+  10% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translate(1000px, 500px);
+  }
+}
