@@ -1414,3 +1414,42 @@ h2 {
     transform: rotate(10deg);
   }
 }
+
+#button27 {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 3px solid white;
+  padding: 30px 50px;
+  background-color: #222;
+  position: relative;
+  overflow: hidden;
+}
+#button27:before {
+  content: "";
+  background-color: #F44336;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 83px;
+  position: absolute;
+  z-index: -1;
+  transform: skew(-15deg);
+  animation: stripemove 1.2s linear infinite;
+  transition: all 0.5s;
+}
+
+#button27:hover:before {
+  width: 100%;
+  transform: skew(0deg);
+  animation: none;
+}
+
+@keyframes stripemove {
+  from {
+    left: -120px;
+  }
+  to {
+    left: 100%;
+  }
+}

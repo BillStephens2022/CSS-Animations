@@ -593,4 +593,76 @@ h2 {
     content: "transforms"
   }
 }
+
+/* Project 10: Lighting Text */
+#project-container10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 60vw;
+  padding: 4rem;
+}
+
+#project-container10 h2 {
+  color: white;
+}
+
+
+#project10-box ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+  
+
+#project10-box ul li {
+  list-style: none;
+  color: #484848;
+  font-size: 80px;
+  letter-spacing: 15px;
+  animation: lightingText 1.4s linear infinite;
+}
+
+@keyframes lightingText {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 0 50px #ff6c00;
+  }
+}
+
+#project10-box ul li:nth-child(1) {
+ animation-delay: 0;
+}
+
+#project10-box ul li:nth-child(2) {
+  animation-delay: 0.1s;
+ }
+ #project10-box ul li:nth-child(3) {
+  animation-delay: 0.2s;
+ }
+ #project10-box ul li:nth-child(4) {
+  animation-delay: 0.3s;
+ }
+ #project10-box ul li:nth-child(5) {
+  animation-delay: 0.4s;
+ }
+ #project10-box ul li:nth-child(6) {
+  animation-delay: 0.5s;
+ }
+ #project10-box ul li:nth-child(7) {
+  animation-delay: 0.6s;
+ }
+ #project10-box ul li:nth-child(8) {
+  animation-delay: 0.7s;
+ }
   
