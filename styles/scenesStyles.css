@@ -76,3 +76,36 @@ h2 {
     from { background-position: bottom left; }
     to { background-position: bottom right;}
 }
+
+/* Box2 - Animated Background Pattern */
+
+#box2 {
+    background: mediumpurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #box2 h2 {
+    color: rgb(246, 199, 221);
+  }
+  
+  #scene2 {
+    width: 100vw;
+    height: 80vh;
+    background: url(../images/partypattern.png);
+    background-position: 0 0;
+    animation: animatedPattern 15s linear infinite;
+  }
+
+  @keyframes animatedPattern {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 600px;
+    }
+  }
