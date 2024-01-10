@@ -47,7 +47,6 @@ h2 {
   /* shorthand notation: */
   /* these can go in any order, with one exception, duration must always be shown before the delay */
   animation: moving 3s both infinite alternate-reverse 1s;
-
 }
 
 @keyframes moving {
