@@ -102,6 +102,7 @@ h2 {
   color: white;
   font-weight: 900;
   text-align: center;
+  opacity: 0.7;
 }
 
 .container {
@@ -170,7 +171,6 @@ ul li a:hover:before {
 
   h2 {
     font-size: 1.75rem;
-    opacity: 0.7;
   }
 
   ul li a {
