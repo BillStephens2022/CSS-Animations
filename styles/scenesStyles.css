@@ -155,3 +155,26 @@ h2 {
     }
     
   }
+
+  #box4 {
+    animation: bgColorChange 10s infinite;
+    margin: auto;
+    padding: 5rem;
+    border-radius: 50%;
+  }
+
+  #box4 h2 {
+    font-size: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white
+  }
+
+  @keyframes bgColorChange {
+    0% { background-color: #252839; }
+    20% { background-color: blue; }
+    40% { background-color: tomato; }
+    60% { background-color: lightblue; }
+    80% { background-color: darkgreen; }
+    100% { background-color: #252839; }
+  }
