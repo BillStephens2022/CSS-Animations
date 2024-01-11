@@ -21,6 +21,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 900;
+  color: white;
 }
 
 .projects-container {
@@ -28,16 +29,27 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: 1rem 0;
   padding: 2rem 0;
 }
 
+#project1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: fuchsia;
+  padding: 2rem;
+}
+
 #box1 {
   width: 150px;
   height: 150px;
-  background-color: red;
+  margin: 0;
+  background-color: lavenderblush;
   /* animation-name: moving;
   animation-duration: 3s;
   animation-fill-mode: both;
@@ -51,12 +63,74 @@ h2 {
 
 @keyframes moving {
   0% {
-    transform: translateX(500px);
+    transform: translateX(-500px);
   }
   10% {
-    transform: translateX(1000px);
+    transform: translateX(500px);
   }
   100% {
-    transform: translate(1000px, 500px);
+    transform: translate(-500px, 0);
   }
+}
+
+#project2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #770303;
+}
+
+#project2 h2 {
+  margin-bottom: 9rem;
+}
+
+#box2 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: 10px solid white;
+}
+
+#box2 ul li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 50%;
+  animation: jumping 0.8s linear infinite;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#box2 ul li:nth-child(1) {
+  animation-delay: 0.45s;
+}
+
+#box2 ul li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+#box2 ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+#box2 ul li:nth-child(4) {
+  animation-delay: 0s;
+}
+
+#box2 ul li:nth-child(5) {
+  animation-delay: 0.15s;
 }
