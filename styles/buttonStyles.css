@@ -1453,3 +1453,99 @@ h2 {
     left: 100%;
   }
 }
+
+#icons28-container {
+  width: 75%;
+  border: 10px white solid;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #83ada3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#icons28 {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#icons28 li {
+  list-style: none;
+  width: 120px;
+  height: 120px;
+  margin: 0 20px;
+  border: 2px solid #0a3d62;
+  border-radius: 50%;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icons28 li i {
+  font-size: 48px;
+  color: #0a3d62;
+  transition: all 0.5s;
+  z-index: 5;
+}
+
+#icons28 li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a3d62;
+  border-radius: 50%;
+  z-index: 2;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#icons28 li:hover:before {
+  opacity: 1;
+
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+#icons28 li:hover i {
+  color: white;
+}
+
+#icons28 li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 2;
+  transition: all 0.5s;
+  opacity: 0;
+  border: 2px dashed #2e86de;
+  box-sizing: border-box;
+}
+
+@keyframes rotatingDashedLine {
+  0% {
+    transform: scale(0.92) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.92) rotate(360deg);
+  }
+  
+}
+
+#icons28 li:hover:after {
+  opacity: 1;
+  animation: rotatingDashedLine 10s linear infinite;
+}
