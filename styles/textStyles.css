@@ -688,6 +688,7 @@ h2 {
   margin: 0;
   text-transform: uppercase;
   background: url(../images/textbackground.jpg);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   animation: textbackground 20s linear infinite;
