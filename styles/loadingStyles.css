@@ -394,3 +394,41 @@ h2 {
   0% { transform: rotate(0deg); }
   100% {transform: rotate(360deg); }
 }
+
+/* Box7 - Animated Line Loader  */
+
+#box7 {
+  background: #17cdbb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 18rem;
+}
+
+#loader7 {
+  width: 300px;
+  height: 3px;
+  background-color: white;
+  animation: lineLoader 2s infinite alternate;
+}
+
+@keyframes lineLoader {
+  0% { 
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  45% { 
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50% { 
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% { 
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
