@@ -345,3 +345,52 @@ h2 {
   50% { width: 100%; }
   100% {width: 0; }
 }
+
+/* Box6 - Animated Circle Loader  */
+
+#box6 {
+  background: #1c504b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 18rem;
+}
+
+#box6 h2 {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+#loader6 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+#ring {
+  width: 100%;
+  height: 100%;
+  border-left: 4px solid #262626;
+  border-radius: 50%;
+  animation: rotateRing 1s linear infinite;
+}
+
+#text6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 200px;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@keyframes rotateRing {
+  0% { transform: rotate(0deg); }
+  100% {transform: rotate(360deg); }
+}
