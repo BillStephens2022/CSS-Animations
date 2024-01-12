@@ -148,7 +148,7 @@ h2 {
   animation-delay: 1.2s;
 }
 
-/* Box2 - Stretching Text with Color Changes  */
+/* Box3 - Stretching Text with Color Changes  */
 
 #box3 {
   background: #fe02d0;
@@ -299,4 +299,49 @@ h2 {
   87.5% { top: 0; left: 0; }
   100% { top: 0; left: 0; }
 
+}
+
+/* Box5 - Stretching Text with Color Changes  */
+
+#box5 {
+  background: #2d1722;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 18rem;
+}
+
+#box5 h2 {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+#loader5 h3 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: white;
+  position: relative;
+  animation: highlight-text 5s linear infinite;
+}
+
+#loader5 h3:before {
+  content: "loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #f6b93b;
+  overflow: hidden;
+  border-right: 4px solid #f6b93b;
+} 
+
+@keyframes highlight-text {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% {width: 0; }
 }
