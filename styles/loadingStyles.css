@@ -432,3 +432,63 @@ h2 {
     transform-origin: right;
   }
 }
+
+/* Box8 - Growing Lines Loader  */
+
+#box8 {
+  background: #f4b806;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 18rem;
+}
+
+#loader8 {
+  display: flex;
+}
+
+.obj8 {
+  width: 6px;
+  height: 40px;
+  background-color: white;
+  margin: 0 3px;
+  border-radius: 10px;
+  animation: lineGrow 0.8s linear infinite;
+}
+
+@keyframes lineGrow {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+.obj8:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.obj8:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.obj8:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.obj8:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.obj8:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.obj8:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.obj8:nth-child(8) {
+  animation-delay: 0.7s;
+}
