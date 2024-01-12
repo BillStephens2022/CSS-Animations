@@ -571,3 +571,62 @@ h2 {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Box10 - Fading Squares */
+
+#box10 {
+  background-color: midnightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 18rem;
+}
+
+#box10 h2 {
+  color: white;
+}
+
+#loader10 {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#loader10 span {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+#loader10 span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: squaresLoader 1s linear infinite;
+}
+
+@keyframes squaresLoader {
+  0% { width: 100%; height: 100%; }
+  100% { width: 0; height: 0;}
+}
+
+#loader10 #s4:before,
+#loader10 #s5:before,
+#loader10 #s6:before {
+  animation-delay: 0.1s;
+}
+
+#loader10 #s7:before,
+#loader10 #s8:before,
+#loader10 #s9:before {
+  animation-delay: 0.2s;
+}
