@@ -246,3 +246,57 @@ h2 {
   
 }
 
+/* Box4 - Stretching Text with Color Changes  */
+
+#box4 {
+  background: #3c2ccd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 18rem;
+}
+
+#box4 h2 {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+#loader4 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+#loader4 span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 4px;
+  animation: chase 2s linear infinite;
+}
+
+#loader4 span:nth-child(2) {
+  background-color: #252839;
+  animation-delay: 0.7s;
+}
+
+#loader4 span:nth-child(3) {
+  background-color: #FD6C64;
+  animation-delay: 1.4s;
+}
+
+@keyframes chase {
+  0% { top: 0; left: 0; }
+  12.5% { top: 0; left: 50%; }
+  25% { top: 0; left: 50%; }
+  37.5% { top: 50%; left: 50%; }
+  50% { top: 50%; left: 50%; }
+  62.5% { top: 50%; left: 0; }
+  75% { top: 50%; left: 0; }
+  87.5% { top: 0; left: 0; }
+  100% { top: 0; left: 0; }
+
+}
