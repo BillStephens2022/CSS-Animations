@@ -630,3 +630,72 @@ h2 {
 #loader10 #s9:before {
   animation-delay: 0.2s;
 }
+
+/* Box8 - Growing Lines Loader  */
+
+#box11 {
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  min-height: 18rem;
+}
+
+#box11 h2 {
+  color: white;
+}
+
+#loader11 {
+  display: flex;
+  width: 70px;
+}
+
+#loader11 span {
+  width: 10px;
+  height: 60px;
+  background-color: white;
+  margin: 0 1px;
+  border-radius: 10px;
+  animation: lineGrow2 0.8s ease-in-out infinite;
+}
+
+@keyframes lineGrow2 {
+  0% {
+    transform: scaleY(0.1);
+  }
+  35% {
+    transform: scaleY(1);
+  }
+  60%, 100% {
+    transform: scaleY(0.1);
+  }
+}
+
+#loader11 span:nth-child(1) {
+  background-color: #2eeca8;
+  animation-delay: 0.2s;
+}
+
+#loader11 span:nth-child(2) {
+  background-color: #eade3d;
+  animation-delay: 0.3s;
+}
+
+#loader11 span:nth-child(3) {
+  background-color: #55acee;
+  animation-delay: 0.4s;
+}
+#loader11 span:nth-child(4) {
+  background-color: #ec902e;
+  animation-delay: 0.5s;
+}
+#loader11 span:nth-child(5) {
+  background-color: #09b7bf;
+  animation-delay: 0.6s;
+}
+#loader11 span:nth-child(6) {
+  background-color: #ea3d8c;
+  animation-delay: 0.7s;
+}
