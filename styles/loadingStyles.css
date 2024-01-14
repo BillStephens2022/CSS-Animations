@@ -787,6 +787,8 @@ h2 {
   }
 }
 
+/* Box13 - Rotating Lopsided Circles  */
+
 #box13 {
   background: black;
   display: flex;
@@ -846,6 +848,67 @@ h2 {
   text-transform: lowercase;
 }
 
+/* Box14 - Glowing Circling Border */
 
+#box14 {
+  background: #001d30;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  min-height: 18rem;
+}
+
+#box14 h2 {
+  color: #1F7880;
+  margin-bottom: 3rem;
+}
+
+#box14 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+#loader14 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 29, 48, 1) 40%,
+    rgba(81, 238, 238, 1) 100%
+  );
+  border-radius: 50%;
+  animation: rotateBorder 2s linear infinite;
+}
+
+#loader14:before {
+  content: "";
+  position: absolute;
+  inset: 20px 20px 0 0;
+  background: #001d30;
+  border-radius: 50%;
+}
+
+#loader14:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #51eeee;
+  border-radius: 50%;
+  top: 50px;
+  right: -8px;
+  box-shadow: 0 0 5px #51eeee, 0 0 25px #51eeee,
+  0 0 50px #51eeee,0 0 75px #51eeee;
+}
+
+@keyframes rotateBorder {
+  100% { transform: rotate(360deg); }
+}
 
 
