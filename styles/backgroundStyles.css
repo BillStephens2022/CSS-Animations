@@ -25,7 +25,6 @@ h2 {
   font-weight: 900;
   margin: auto;
   color: white;
-
 }
 
 .projects-container {
@@ -64,234 +63,322 @@ h2 {
 }
 
 #car {
-    position: absolute;
-    left: 300px;
-    bottom: -50px;
-    width: 200px;
+  position: absolute;
+  left: 300px;
+  bottom: -50px;
+  width: 200px;
 }
 
 #motorbike {
-    position: absolute;
-    left: 700px;
-    bottom: 55px;
-    width: 150px;
+  position: absolute;
+  left: 700px;
+  bottom: 55px;
+  width: 150px;
 }
 
 @keyframes driving {
-    from { background-position: bottom left; }
-    to { background-position: bottom right;}
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: bottom right;
+  }
 }
 
 /* Box2 - Animated Background Pattern */
 
 #box2 {
-    background: mediumpurple;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #box2 h2 {
-    color: rgb(246, 199, 221);
-  }
-  
-  #scene2 {
-    width: 100vw;
-    height: 80vh;
-    background: url(../images/partypattern.png);
+  background: mediumpurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#box2 h2 {
+  color: rgb(246, 199, 221);
+}
+
+#scene2 {
+  width: 100vw;
+  height: 80vh;
+  background: url(../images/partypattern.png);
+  background-position: 0 0;
+  animation: animatedPattern 15s linear infinite;
+}
+
+@keyframes animatedPattern {
+  from {
     background-position: 0 0;
-    animation: animatedPattern 15s linear infinite;
   }
-
-  @keyframes animatedPattern {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 0 600px;
-    }
+  to {
+    background-position: 0 600px;
   }
+}
 
-  #box3 h2 {
-    color: white;
-    text-align: center;
-    background-color: transparent;
-    font-size: 1.75rem;
-    margin: 1rem;
+#box3 h2 {
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  font-size: 1.75rem;
+  margin: 1rem;
+}
+
+#box3 {
+  padding: 0;
+  margin: auto;
+  background: url(../images/castle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#scene3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 200vh;
+  background: url(../images/rain.png);
+  animation: rain 1.5s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0% 0%;
   }
-
-  #box3 {
-    padding:0;
-    margin: auto;
-    background: url(../images/castle.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50vw;
-    height: 50vh;
-    position: relative;
-    overflow: hidden;
+  100% {
+    background-position: 20% 100%;
   }
+}
 
-  #scene3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200vw;
-    height: 200vh;
-    background: url(../images/rain.png);
-    animation: rain 1.5s linear infinite;
-    opacity: 0.4;
+#box4 {
+  animation: bgColorChange 10s infinite;
+  margin: auto;
+  padding: 5rem;
+  border-radius: 50%;
+}
+
+#box4 h2 {
+  font-size: 48px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+
+@keyframes bgColorChange {
+  0% {
+    background-color: #252839;
   }
-
-  @keyframes rain {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 20% 100%;
-    }
+  20% {
+    background-color: blue;
   }
-
-  #box4 {
-    animation: bgColorChange 10s infinite;
-    margin: auto;
-    padding: 5rem;
-    border-radius: 50%;
+  40% {
+    background-color: tomato;
   }
-
-  #box4 h2 {
-    font-size: 48px;
-    text-align: center;
-    text-transform: capitalize;
-    color: white
+  60% {
+    background-color: lightblue;
   }
-
-  @keyframes bgColorChange {
-    0% { background-color: #252839; }
-    20% { background-color: blue; }
-    40% { background-color: tomato; }
-    60% { background-color: lightblue; }
-    80% { background-color: darkgreen; }
-    100% { background-color: #252839; }
+  80% {
+    background-color: darkgreen;
   }
-
-  #box5 {
-    position: relative;
-    background-color: midnightblue;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
+  100% {
+    background-color: #252839;
   }
+}
 
-  #text5 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-transform: uppercase;
-    font-size: 35px;
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-    text-align: center;
-  }
+#box5 {
+  position: relative;
+  background-color: midnightblue;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
 
-  .square5 {
-    position: absolute;
+#text5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 35px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  text-align: center;
+}
+
+.square5 {
+  position: absolute;
+  bottom: -100px;
+  background-color: #f2f2f2;
+  animation: rotateAndUp 10s infinite ease-in-out;
+}
+
+.square5:nth-child(1) {
+  width: 75px;
+  height: 75px;
+  left: 7%;
+}
+
+.square5:nth-child(2) {
+  width: 65px;
+  height: 65px;
+  left: 15%;
+  animation-delay: 4s;
+}
+
+.square5:nth-child(3) {
+  width: 82px;
+  height: 82px;
+  left: 45%;
+  animation-delay: 8s;
+}
+
+.square5:nth-child(4) {
+  width: 70px;
+  height: 70px;
+  left: 55%;
+  animation-delay: 2s;
+}
+
+.square5:nth-child(5) {
+  width: 60px;
+  height: 60px;
+  left: 27%;
+  animation-delay: 6s;
+}
+
+.square5:nth-child(6) {
+  width: 55px;
+  height: 55px;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.square5:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 85%;
+  animation-delay: 9s;
+}
+
+.square5:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 85%;
+  animation-delay: 9s;
+}
+
+.square5:nth-child(8) {
+  width: 70px;
+  height: 70px;
+  left: 75%;
+  animation-delay: 4s;
+}
+
+.square5:nth-child(9) {
+  width: 45px;
+  height: 45px;
+  left: 10%;
+  animation-delay: 7s;
+}
+
+.square5:nth-child(10) {
+  width: 55px;
+  height: 55px;
+  left: 60%;
+  animation-delay: 7s;
+}
+
+@keyframes rotateAndUp {
+  0% {
     bottom: -100px;
-    background-color: #f2f2f2;
-    animation: rotateAndUp 10s infinite ease-in-out;
   }
-
-  .square5:nth-child(1) {
-    width: 75px;
-    height: 75px;
-    left: 7%;
+  100% {
+    bottom: 100%;
+    transform: rotate(180deg);
+    opacity: 0;
   }
+}
 
-  .square5:nth-child(2) {
-    width: 65px;
-    height: 65px;
-    left: 15%;
-    animation-delay: 4s;
+#box6 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+#text6 {
+  margin: 0;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  text-transform: uppercase;
+  z-index: 1;
+} 
+
+.square6 {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #003298;
+  animation: boxFadeInAndRotate 12s ease-in infinite;
+  transform: scale(0);
+}
+
+.square6:nth-child(2) {
+  top: 40%;
+  left: 25%;
+  border-color: red;
+  animation-delay: 2s;
+}
+
+.square6:nth-child(3) {
+  top: 50%;
+  left: 75%;
+  animation-delay: 4s;
+}
+
+.square6:nth-child(4) {
+  top: 10%;
+  left: 90%;
+  border-color: red;
+  animation-delay: 6s;
+}
+
+.square6:nth-child(5) {
+  top: 85%;
+  left: 10%;
+  animation-delay: 8s;
+}
+
+.square6:nth-child(6) {
+  top: 10%;
+  left: 50%;
+  border-color: red;
+  animation-delay: 10s;
+}
+
+@keyframes boxFadeInAndRotate {
+  0% {
+    transform: scale(0) rotate(0);
+    opacity: 1;
   }
-
-  .square5:nth-child(3) {
-    width: 82px;
-    height: 82px;
-    left: 45%;
-    animation-delay: 8s;
+  100% {
+    transform: scale(20) rotate(960deg);
+    opacity: 0;
   }
-
-  .square5:nth-child(4) {
-    width: 70px;
-    height: 70px;
-    left: 55%;
-    animation-delay: 2s;
-  }
-
-  .square5:nth-child(5) {
-    width: 60px;
-    height: 60px;
-    left: 27%;
-    animation-delay: 6s;
-  }
-
-  .square5:nth-child(6) {
-    width: 55px;
-    height: 55px;
-    left: 60%;
-    animation-delay: 4s;
-  }
-
-  .square5:nth-child(7) {
-    width: 90px;
-    height: 90px;
-    left: 85%;
-    animation-delay: 9s;
-  }
-  
-  .square5:nth-child(7) {
-    width: 90px;
-    height: 90px;
-    left: 85%;
-    animation-delay: 9s;
-  }
-
-  .square5:nth-child(8) {
-    width: 70px;
-    height: 70px;
-    left: 75%;
-    animation-delay: 4s;
-  }
-
-  .square5:nth-child(9) {
-    width: 45px;
-    height: 45px;
-    left: 10%;
-    animation-delay: 7s;
-  }
-
-  .square5:nth-child(10) {
-    width: 55px;
-    height: 55px;
-    left: 60%;
-    animation-delay: 7s;
-  }
-
-  @keyframes rotateAndUp {
-    0% {
-      bottom: -100px;
-    }
-    100% {
-      bottom: 100%;
-      transform: rotate(180deg);
-      opacity: 0;
-    }
-  }
-
-
-
+}
