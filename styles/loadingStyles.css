@@ -1107,3 +1107,72 @@ h2 {
     transform: rotate(180deg) scale(1);
   }
 }
+
+
+/* Box17 - Split Loader */
+#box17 {
+  background: lavenderblush;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  width: 500px;
+  min-height: 20rem;
+  overflow: hidden;
+}
+
+#box17 h2 {
+  color: #2980b9;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+#loader17 {
+  width: 300px;
+  height: 60px;
+  border: 7px solid #0a3d62;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+#loader17 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#top-half {
+  color: #ee5253;
+  clip-path: polygon(0 1%, 100% 0, 100% 50%, 0 50%);
+  animation: splitText 4s linear infinite reverse;
+}
+
+#bottom-half {
+  color: #0a3d62;
+  clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+  animation: splitText 4s linear infinite;
+}
+
+@keyframes splitText {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
