@@ -602,7 +602,7 @@ h2 {
 #button14:before,
 #button14:after,
 #span-button14:before,
-#span-button14:after  {
+#span-button14:after {
   content: "";
   position: absolute;
   width: 25%;
@@ -669,10 +669,9 @@ h2 {
   width: 160px;
   line-height: 60px;
   text-align: center;
-  color: #FDC518;
+  color: #fdc518;
   position: relative;
   margin: 1rem 0;
-  
 }
 
 #button15:before {
@@ -683,9 +682,8 @@ h2 {
   top: -15px;
   left: 0;
   border-left: 2px solid red;
-  border-right: 2px solid #FDC518;
+  border-right: 2px solid #fdc518;
   transition: all 0.4s;
-
 }
 
 #button15:after {
@@ -696,7 +694,7 @@ h2 {
   top: 0;
   left: -15px;
   border-top: 2px solid red;
-  border-bottom: 2px solid #FDC518;
+  border-bottom: 2px solid #fdc518;
   transition: all 0.4s;
   transition-delay: 0.4s;
 }
@@ -714,7 +712,7 @@ h2 {
   padding: 12px 40px;
   background-color: #c47135;
   color: white;
-  font-family: 'BenchNine';
+  font-family: "BenchNine";
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
@@ -780,10 +778,9 @@ h2 {
   opacity: 0;
   transition: all 0.8s;
   z-index: -1;
- 
 }
 
-#button17:hover:before  {
+#button17:hover:before {
   opacity: 1;
   transform: rotate(15deg);
 }
@@ -921,14 +918,18 @@ h2 {
   left: 0;
   width: 100%;
   height: 22px;
-  background: url(./images/wave.png);
+  background: url(../images/wave.png);
   z-index: 5;
   animation: wavy 0.5s linear infinite;
 }
 
 @keyframes wavy {
-  0% { background-position-x: 0; }
-  100% { background-position-x: 118px; }
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 118px;
+  }
 }
 
 #button20 {
@@ -971,7 +972,6 @@ h2 {
   left: 50%;
   transition: all 0.2s;
   transform: translate(-50%, -50%) rotate(-60deg);
-
 }
 
 #button20:hover #span-button20:before {
@@ -1004,7 +1004,7 @@ h2 {
   background-color: #ee5253;
   transform: skewX(30deg);
   z-index: -1;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, .265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 #button21:hover:before {
@@ -1023,7 +1023,7 @@ h2 {
   background-color: #0a3d62;
   transform: skewX(30deg);
   z-index: -1;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, .265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 #button21:hover:after {
@@ -1074,7 +1074,7 @@ h2 {
 
 #button22:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #button23 {
@@ -1173,15 +1173,14 @@ h2 {
 .span-button24 {
   position: absolute;
   background: #1e9bff;
-  box-shadow: 0 0 10px #1e9bff, 0 0 20px #1e9bff, 0 0 30px #1e9bff, 0 0 50px #1e9bff,0 0 100px #1e9bff;
-
+  box-shadow: 0 0 10px #1e9bff, 0 0 20px #1e9bff, 0 0 30px #1e9bff,
+    0 0 50px #1e9bff, 0 0 100px #1e9bff;
 }
 
 .span-button24:nth-child(1),
 .span-button24:nth-child(3) {
   width: 40px;
   height: 4px;
-  
 }
 
 .span-button24:nth-child(2),
@@ -1373,13 +1372,15 @@ h2 {
 .button25-div:nth-child(1):before,
 .button25-div:nth-child(1):after {
   background: #ff0461;
-  box-shadow: 0 0 5px #ff0461, 0 0 15px #ff0461, 0 0 30px #ff0461, 0 0 60px #ff0461;
+  box-shadow: 0 0 5px #ff0461, 0 0 15px #ff0461, 0 0 30px #ff0461,
+    0 0 60px #ff0461;
 }
 
 .button25-div:nth-child(2):before,
 .button25-div:nth-child(2):after {
   background: #ff0461;
-  box-shadow: 0 0 5px #ff0461, 0 0 15px #ff0461, 0 0 30px #ff0461, 0 0 60px #ff0461;
+  box-shadow: 0 0 5px #ff0461, 0 0 15px #ff0461, 0 0 30px #ff0461,
+    0 0 60px #ff0461;
 }
 
 .bg-blue {
@@ -1427,7 +1428,7 @@ h2 {
 }
 #button27:before {
   content: "";
-  background-color: #F44336;
+  background-color: #f44336;
   top: 0;
   left: 0;
   width: 60px;
@@ -1542,7 +1543,6 @@ h2 {
   100% {
     transform: scale(0.92) rotate(360deg);
   }
-  
 }
 
 #icons28 li:hover:after {
@@ -1590,9 +1590,18 @@ h2 {
 }
 
 @keyframes pulsingPhone {
-  0% { transform: scale(0.5); opacity: 0; }
-  50% { transform: scale(1); opacity: 1; }
-  100% { transform: scale(1.2); opacity: 0; }
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
 #icon29-div:after {
@@ -1745,5 +1754,127 @@ h2 {
   100% {
     top: calc(100% - 22px);
     left: 100%;
+  }
+}
+
+#container31 {
+  background-color: #051130;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 18rem;
+}
+
+#container31 h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+#button31 {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  font-size: 24px;
+  color: #03e9f4;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  overflow: hidden;
+}
+
+#button31:hover {
+  background: #03e9f4;
+  color: #051130;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+
+#button31 span:nth-child(1) {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animateLine1 1s linear infinite;
+}
+
+@keyframes animateLine1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+#button31 span:nth-child(2) {
+  position: absolute;
+  display: block;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animateLine2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animateLine2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+#button31 span:nth-child(3) {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animateLine3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animateLine3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+#button31 span:nth-child(4) {
+  position: absolute;
+  display: block;
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animateLine4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animateLine4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
   }
 }
