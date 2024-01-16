@@ -345,181 +345,181 @@ h2 {
 }
 
 #project5-box {
-    font-family: "Just Another Hand";
+  font-family: "Just Another Hand";
 }
 
 #project5-box ul {
-    margin: 0;
-    padding: 0;
-    font-size: 10em;
-    display: flex;
-    color: white;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  display: flex;
+  color: white;
+  cursor: pointer;
 }
 
 #project5-box ul li {
-    list-style: none;
-    transition: 0.5s;
+  list-style: none;
+  transition: 0.5s;
 }
 
 #project5-box ul:hover li {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #project5-box ul:hover li:last-child {
-    transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 #project5-box ul li span {
-    transition: 0.5s;
-    display: inline-block;
+  transition: 0.5s;
+  display: inline-block;
 }
 
 #project5-box ul:hover li:last-child span:nth-child(2) {
-    transform: rotate(180deg) translateY(-25px);
-    transition-delay: 1s;
+  transform: rotate(180deg) translateY(-25px);
+  transition-delay: 1s;
 }
 
 #project5-box ul:hover li:last-child span:nth-child(1) {
-    transform: rotate(90deg) translateY(10px);
-    transition-delay: 1.5s;
+  transform: rotate(90deg) translateY(10px);
+  transition-delay: 1.5s;
 }
 
 /* Project 6: Focus Blur Effect */
 #project-container6 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #6c59b6;
-    padding: 4rem;
-    overflow: hidden;
-  }
-  
-  #project-container6 h2 {
-    color: white;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c59b6;
+  padding: 4rem;
+  overflow: hidden;
+}
 
-  #project6-box {
-    position: relative;
-    width: 450px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
+#project-container6 h2 {
+  color: white;
+}
 
-  #project6-box img {
-    position: absolute;
-    width: 140%;
-    height: 140%;
-    top: -20%;
-    left: -20%;
-    filter: blur(10px);
-    transition: 2s;
-  }
+#project6-box {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
-  #project6-box h3 {
-    position: relative;
-    color: white;
-    font-size: 7em;
-    text-transform: uppercase;
-    text-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    font-weight: 900;
-    z-index: 2;
-    transition: 2s;
-  }
+#project6-box img {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  filter: blur(10px);
+  transition: 2s;
+}
 
-  #project6-box h3:hover {
-    filter: blur(10px);
-    transform: scale(1.2);
-  }
+#project6-box h3 {
+  position: relative;
+  color: white;
+  font-size: 7em;
+  text-transform: uppercase;
+  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+  z-index: 2;
+  transition: 2s;
+}
 
-  #project6-box h3:hover ~ img {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: blur(0px);
-  }
+#project6-box h3:hover {
+  filter: blur(10px);
+  transform: scale(1.2);
+}
 
-  /* Project 7: Single Letter Focus on Hover */
+#project6-box h3:hover ~ img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+}
+
+/* Project 7: Single Letter Focus on Hover */
 #project-container7 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: orangered;
-    padding: 4rem;
-  }
-  
-  #project-container7 h2 {
-    color: white;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: orangered;
+  padding: 4rem;
+}
 
-  #project7-box {
-    font-family: monospace;
-    position: relative;
-    width: 450px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, #0082ce, #ffd000);
-  }
+#project-container7 h2 {
+  color: white;
+}
 
-  #project7-box h3 {
-    position: relative;
-    display: flex;
-    gap: 15px;
-    color: white;
-    font-size: 4em;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
+#project7-box {
+  font-family: monospace;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0082ce, #ffd000);
+}
 
-  #project7-box h3 span {
-    position: relative;
-    filter: blur(5px);
-    transition: 0.5s;
-  }
+#project7-box h3 {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-size: 4em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 
-  #project7-box h3 span:hover {
-    filter: blur(0);
-    transition: 0s;
-  }
+#project7-box h3 span {
+  position: relative;
+  filter: blur(5px);
+  transition: 0.5s;
+}
 
-  .letter::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 8px;
-    background: white;
-    top: 0;
-    left: -5px;
-    box-shadow: 0 53px #fff, 37px 53px #fff, 36px 0px #fff;
-    opacity: 0;
-  }
+#project7-box h3 span:hover {
+  filter: blur(0);
+  transition: 0s;
+}
 
-  .letter::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 2px;
-    background: white;
-    top: 0;
-    left: -5px;
-    box-shadow: 0 60px #fff, 30px 60px #fff, 30px 0px #fff;
-    opacity: 0;
-  } 
+.letter::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background: white;
+  top: 0;
+  left: -5px;
+  box-shadow: 0 53px #fff, 37px 53px #fff, 36px 0px #fff;
+  opacity: 0;
+}
 
-  #project7-box h3 span:hover i:before,
-  #project7-box h3 span:hover i:after {
-    opacity: 1;
-  }
+.letter::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background: white;
+  top: 0;
+  left: -5px;
+  box-shadow: 0 60px #fff, 30px 60px #fff, 30px 0px #fff;
+  opacity: 0;
+}
 
-  /* Project 8: Floating Text */
+#project7-box h3 span:hover i:before,
+#project7-box h3 span:hover i:after {
+  opacity: 1;
+}
+
+/* Project 8: Floating Text */
 #project-container8 {
   display: flex;
   flex-direction: column;
@@ -540,22 +540,23 @@ h2 {
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 15px;
-  text-shadow: 0 1px 0 #efefef,
-  0 2px 0 #efefef,
-  0 3px 0 #efefef,
-  0 4px 0 #efefef,
-  0 30px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef,
+    0 4px 0 #efefef, 0 30px 5px rgba(0, 0, 0, 0.1);
   animation: float 3s linear infinite;
   animation-direction: alternate;
 }
 
 @keyframes float {
-  from { transform: rotate(5deg); }
-  to { transform: rotate(-5deg); }
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
 }
 
- /* Project 9: Text Rotator*/
- #project-container9 {
+/* Project 9: Text Rotator*/
+#project-container9 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -578,19 +579,19 @@ h2 {
   content: "TRANSITIONS";
   text-transform: uppercase;
   font-family: arial;
-  color: #1B1464;
+  color: #1b1464;
   animation: word-switch 5s infinite;
 }
 
 @keyframes word-switch {
   0% {
-    content: "transitions"
+    content: "transitions";
   }
   50% {
     content: "animations";
   }
   100% {
-    content: "transforms"
+    content: "transforms";
   }
 }
 
@@ -609,13 +610,11 @@ h2 {
   color: white;
 }
 
-
 #project10-box ul {
   margin: 0;
   padding: 0;
   display: flex;
 }
-  
 
 #project10-box ul li {
   list-style: none;
@@ -641,33 +640,33 @@ h2 {
 }
 
 #project10-box ul li:nth-child(1) {
- animation-delay: 0;
+  animation-delay: 0;
 }
 
 #project10-box ul li:nth-child(2) {
   animation-delay: 0.1s;
- }
- #project10-box ul li:nth-child(3) {
+}
+#project10-box ul li:nth-child(3) {
   animation-delay: 0.2s;
- }
- #project10-box ul li:nth-child(4) {
+}
+#project10-box ul li:nth-child(4) {
   animation-delay: 0.3s;
- }
- #project10-box ul li:nth-child(5) {
+}
+#project10-box ul li:nth-child(5) {
   animation-delay: 0.4s;
- }
- #project10-box ul li:nth-child(6) {
+}
+#project10-box ul li:nth-child(6) {
   animation-delay: 0.5s;
- }
- #project10-box ul li:nth-child(7) {
+}
+#project10-box ul li:nth-child(7) {
   animation-delay: 0.6s;
- }
- #project10-box ul li:nth-child(8) {
+}
+#project10-box ul li:nth-child(8) {
   animation-delay: 0.7s;
- }
+}
 
- /* Project 11: Animated Text Background*/
- #project-container11 {
+/* Project 11: Animated Text Background*/
+#project-container11 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -695,12 +694,16 @@ h2 {
 }
 
 @keyframes textbackground {
-  from { background-position: 0 0;}
-  to { background-position: 100% 100%; }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
- /* Project 12: Fading Text Effect */
- #project-container12 {
+/* Project 12: Fading Text Effect */
+#project-container12 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -709,7 +712,6 @@ h2 {
   width: 60vw;
   padding: 4rem;
 }
-
 
 #project12-box h3 {
   position: relative;
@@ -741,4 +743,90 @@ h2 {
     left: -20%;
   }
 }
+
+/* Project 13: Neon Text Reveal */
+#project-container13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #061b31;
+  padding: 2rem;
+  overflow: hidden;
   
+}
+
+#project13-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 150px;
+  position: relative;
+}
+
+#project-container13 h3 {
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
+    0 0 80px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+  margin: 0;
+}
+
+#lightbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
+  0 0 80px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+  animation: lightbar 5s linear infinite;
+  z-index: 2;
+}
+
+#toplayer {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background:  #061b31;
+  animation: toplayer 10s linear infinite;
+}
+
+@keyframes lightbar {
+  0% {
+    transform: scaleY(0) translateX(0);
+  }
+  10% {
+    transform: scaleY(1) translateX(0);
+  }
+  90% {
+    transform: scaleY(1) translateX(calc(600px - 10px));
+  }
+  100% {
+    transform: scaleY(0) translateX(calc(600px - 10px));
+  }
+}
+
+@keyframes toplayer {
+  5% {
+    transform: translateX(0);
+  }
+  45%,
+  50% {
+    transform: translateX(100%);
+  }
+  50.0001%,
+  55% {
+    transform: translateX(-100%);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
