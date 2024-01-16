@@ -505,3 +505,72 @@ h2 {
 }
 
 
+#project7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-color: #00e1ffaa;
+  padding-bottom: 2rem;
+}
+
+#project7 h2 {
+  color: steelblue;
+  text-shadow: 0 2px 0 white;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+#shapes7 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+#shapes7 span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#shapes7 span:nth-child(1) {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+#shapes7 span:nth-child(2) {
+  background: #ff3e3e;
+  border-radius: 0;
+  animation: animateRedSquare 4s ease-in-out infinite;
+}
+
+#shapes7 span:nth-child(3) {
+  background: white;
+  animation: animateRedSquare 4s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+@keyframes animateRedSquare {
+  0% {
+    transform: translate(-150px, 50px) scale(0.4) rotate(0deg);
+    z-index: 1;
+  }
+  50% {
+    transform: translate(150px, -50px) scale(0.4) rotate(180deg);
+    z-index: 1;
+  }
+  50.0001% {
+    transform: translate(150px, -50px) scale(0.4) rotate(180deg);
+    z-index: 3;
+  }
+  100% {
+    transform: translate(-150px, 50px) scale(0.4) rotate(360deg);
+    z-index: 3;
+  }
+}
+
+
