@@ -698,4 +698,47 @@ h2 {
   from { background-position: 0 0;}
   to { background-position: 100% 100%; }
 }
+
+ /* Project 12: Fading Text Effect */
+ #project-container12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #9a0e0e;
+  width: 60vw;
+  padding: 4rem;
+}
+
+
+#project12-box h3 {
+  position: relative;
+  color: white;
+  font-size: 3.7em;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+#project12-box h3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: #9a0e0e;
+  animation: fadeText 10s linear infinite;
+}
+
+@keyframes fadeText {
+  0% {
+    left: -20%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: -20%;
+  }
+}
   
