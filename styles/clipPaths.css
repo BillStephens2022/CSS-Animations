@@ -1,0 +1,25 @@
+body {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: honeydew;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+
+     /* Use this link to create polygons or get points for ocmmon polygons
+     https://bennettfeely.com/clippy/ */
+    /* triangle */
+    /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
+    /* upside down triangle */
+    /* clip-path: polygon(0 0, 50% 100%, 100% 0); */
+    /* right facing triangle (point to right) */
+    /* clip-path: polygon(0 0, 100% 50%, 0 100%); */
+    /* Circle */
+    /* clip-path: circle(50% at 50% 50%); */
+    /* Star */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
