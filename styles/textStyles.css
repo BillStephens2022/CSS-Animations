@@ -941,3 +941,84 @@ h2 {
 #main15 h3:nth-child(1):hover ~ h3 {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
+
+/* Project 16: Split Box Text Animation */
+#project-container16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: blueviolet;
+  height: 65vh;
+  width: 70vw;
+  padding: 6rem 0 0 0;
+  position: relative;
+}
+
+#project-container16 h2 {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  overflow: hidden;
+}
+
+#main16 {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  
+}
+
+.box16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box16-2 {
+  background: #4cb979;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.box16 h3 {
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-70%);
+  text-align: center;
+  animation: animateNewYear 3s ease-in-out infinite;
+  color: #4cb979;
+}
+
+.box16-2 h3 {
+  color: white;
+}
+
+.box16 h3 span:nth-child(2) {
+  line-height: 1em;
+  font-size: 2em;;
+}
+
+@keyframes animateNewYear {
+  0%,
+  45% {
+    transform: translateY(-70%);
+  }
+  55%,
+  90% {
+    transform: translateY(70%);
+  }
+  100% {
+    transform: translateY(-70%);
+  }
+}
