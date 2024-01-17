@@ -24,8 +24,9 @@ header {
     z-index: 100;
 }
 
-.logo {
-    font-size: 2em;
+.logo a {
+    text-decoration: none;
+    font-size: 1.75em;
     color: #539381;
     margin-right: 270px;
 }
@@ -40,7 +41,7 @@ header {
     transition: 0.5s;
 }
 
-a:hover {
+.navigation a:hover {
     background: #539381;
     color: white;
 }

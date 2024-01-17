@@ -1211,3 +1211,152 @@ h2 {
 #card13 img:hover {
   clip-path: polygon(100% 100%, 100% 0, 100% 100%, 0 100%);
 }
+
+/* Card 14: Expandable Card - JavaScript */
+#project-container14 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #272727;
+  padding: 2rem;
+  height: 40rem;
+}
+
+#project-container14 h2 {
+  color: white;
+}
+
+#card14 {
+  position: relative;
+  width: 350px;
+  height: 85px;
+  background-color: #192a56;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.toggle14 {
+  position: absolute;
+  width: 70px;
+  height: 60px;
+  background: #192a56;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+}
+
+.toggle14:before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  left: -34px;
+  border-top-right-radius: 35px;
+  box-shadow: 11px -10px 0 10px #192a56;
+}
+
+.toggle14:after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  right: -34px;
+  border-top-left-radius: 35px;
+  box-shadow: -11px -10px 0 10px #192a56;
+}
+
+.toggle14 span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: 0.5s;
+}
+
+#card14.active .toggle14 span {
+  transform: translate(-50%, -70%) rotate(225deg);
+}
+
+#card14.active {
+  height: 420px;
+}
+
+#content14 {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+#content14 #content14-box {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#content14 #content14-box h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.1em;
+  margin: 0;
+}
+
+#content14 #content14-box span {
+  font-size: 0.75em;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#img-box14 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+  border: 5px solid white;
+}
+
+#img-box14 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#button14 {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px 35px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  color: #333;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
