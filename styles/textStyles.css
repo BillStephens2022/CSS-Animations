@@ -1060,3 +1060,47 @@ h2 {
   color: #00ff2a;
   text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
 }
+
+/* Project 18: Colorful Flickering Text - JavaScript */
+#project-container18 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  height: 25vh;
+  width: 70vw;
+  position: relative;
+}
+
+#header18 {
+  margin-top: 2rem;
+  color: white;
+}
+
+#text18 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff2;
+}
+
+@keyframes animateText18 {
+  0%, 20% {
+    color: #fff2;
+  }
+  21%, 79% {
+    color: #0f0;
+  }
+  80%, 100% {
+    color: #fff2;
+  }
+}
+
+#text18 span {
+  position: relative;
+  animation: animateText18 1s linear infinite;
+}
