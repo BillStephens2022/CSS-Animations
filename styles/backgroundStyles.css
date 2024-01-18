@@ -56,7 +56,7 @@ h2 {
 
 #scene1 {
   width: 100vw;
-  height: 61vh;
+  height: 100vh;
   background: url(../images/citystreet.jpg);
   background-position: bottom left;
   animation: driving 15s linear infinite;
@@ -65,14 +65,14 @@ h2 {
 #car {
   position: absolute;
   left: 300px;
-  bottom: -50px;
+  bottom: -200px;
   width: 200px;
 }
 
 #motorbike {
   position: absolute;
   left: 700px;
-  bottom: 55px;
+  bottom: -200px;
   width: 150px;
 }
 
