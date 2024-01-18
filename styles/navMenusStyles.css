@@ -1153,3 +1153,95 @@ h1 {
   left: 100%;
 }
 
+#menu16-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(45deg, #8460cd, #ff1252);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header16 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu16-wrapper {
+  width: 270px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#toggle16 {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.3s;
+}
+
+.menu16-wrapper.active #toggle16{
+  transform: rotate(45deg);
+}
+
+.menu16-wrapper #menu16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#menu16 li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  list-style: none;
+  transform: rotate(calc(360deg / 6 * var(--i)));
+}
+
+#menu16 li a {
+  width: 55px;
+  height: 55px;
+  color: #222;
+  background: white;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: visible;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.menu16-wrapper.active #menu16 li a {
+  top: 0;
+  transform: translate(-50%, -50%) rotate(calc(-360deg / 6 * var(--i)));
+}
