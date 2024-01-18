@@ -5,6 +5,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+#homelink {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: steelblue;
+    border: 2px solid steelblue;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+#homelink:hover {
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
 }
 
 .bg {
