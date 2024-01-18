@@ -18,3 +18,10 @@ while(j < 200) {
     section.appendChild(star);
     j++;
 }
+
+let sun = document.querySelector("#sun8");
+let scene = document.querySelector("#box8");
+
+sun.addEventListener("click", () => {
+    scene.classList.toggle("night");
+})
