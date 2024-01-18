@@ -25,3 +25,13 @@ let scene = document.querySelector("#box8");
 sun.addEventListener("click", () => {
     scene.classList.toggle("night");
 })
+
+let video = document.querySelector(".video");
+let thumbs = document.querySelectorAll(".navigation li");
+
+thumbs.forEach((thumb, i) => {
+  thumb.addEventListener("click", () => {
+    video.src = `../images/videos/video${i + 1}.mp4`;
+  })
+});
+
